@@ -15,9 +15,9 @@ All information is saved between refreshes to .json files, so you don't need to 
 3. Navigate to config.py and set your Username and Password
 4. Run the application using python3: python3 run.py
 
-### NOTE ###
+## NOTE ##
 
-1. You may rename all of the files, but make sure you update the dependencies to reflect the new filenames #
+1. You may rename all of the files, but make sure you update the dependencies to reflect the new filenames 
 
 Have Fun!
 
