@@ -1,0 +1,47 @@
+/* static/css/style.css */
+:root { 
+    --bg-color: #0c0c0d;
+    --panel-color: #1a1a1b;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --accent-blue: #00b5ff;
+    --accent-purple: #d400ff;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a3a3a3;
+}
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: var(--bg-color);
+    background-image: radial-gradient(circle at 10% 10%, rgba(0, 181, 255, 0.1), transparent 30%),
+                      radial-gradient(circle at 90% 90%, rgba(212, 0, 255, 0.1), transparent 40%);
+    min-height: 100vh;
+    color: var(--text-primary);
+}
+.glass-panel {
+    background: var(--panel-color);
+    border: 1px solid var(--border-color);
+}
+.terminal { 
+    background-color: #000; color: var(--text-primary); font-family: 'Menlo', 'Monaco', 'Courier New', monospace; 
+    white-space: pre-wrap; word-wrap: break-word; border: 1px solid var(--border-color);
+}
+.btn {
+    display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem; font-weight: 600; transition: all 0.2s ease-in-out; border: 1px solid transparent;
+}
+.btn-primary { background-color: var(--accent-blue); color: white; }
+.btn-primary:hover { background-color: #00a2e6; transform: translateY(-1px); }
+.btn-secondary { background-color: #262626; color: white; border: 1px solid var(--border-color); }
+.btn-secondary:hover { background-color: #3d3d3d; }
+.btn-danger { background-color: #E11D48; color: white; }
+.btn-danger:hover { background-color: #BE123C; }
+.form-input { 
+    background-color: #0c0c0d; color: var(--text-primary); border: 1px solid var(--border-color);
+    border-radius: 0.5rem; padding: 0.75rem; transition: all 0.2s ease;
+}
+.form-input:focus { outline: none; border-color: var(--accent-blue); box-shadow: 0 0 0 2px rgba(0, 181, 255, 0.4); }
+.list-item { background-color: #262626; border: 2px solid transparent; transition: all 0.2s ease; }
+.list-item.selected { background-color: var(--accent-blue); border-color: var(--accent-blue); color: white; }
+.modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(12, 12, 13, 0.7); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; z-index: 50; opacity: 0; transition: opacity 0.2s ease-in-out; pointer-events: none; }
+.modal-overlay.active { opacity: 1; pointer-events: auto; }
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
