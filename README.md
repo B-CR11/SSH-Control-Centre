@@ -8,16 +8,16 @@ You can add commands at the bottom, which will save and can be run against as ma
 
 All information is saved between refreshes to .json files, so you don't need to keep reinputting the same data.
 
-### USAGE INSTRUCTIONS ###
+# USAGE INSTRUCTIONS
 
-# Copy all files to your local machine
-# Run "pip install -r requirements.txt
-# Navigate to config.py and set your Username and Password
-# Run the application using python3: python3 run.py
+1. Copy all files to your local machine
+2. Run "pip install -r requirements.txt
+3. Navigate to config.py and set your Username and Password
+4. Run the application using python3: python3 run.py
 
-## NOTE ##
+### NOTE ###
 
-# You may rename all of the files, but make sure you update the dependencies to reflect the new filenames #
+1. You may rename all of the files, but make sure you update the dependencies to reflect the new filenames #
 
 Have Fun!
 
